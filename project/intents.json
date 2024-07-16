@@ -1,0 +1,159 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?"
+      ],
+      "responses": [
+        "We sell coffee and tea",
+        "We have coffee and tea"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days",
+        "Shipping takes 2-4 days"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tags": "job_search",
+      "patterns": [
+        "I'm looking for a job",
+        "Can you help me find a job",
+        "Job search",
+        "I need a job"
+      ],
+      "responses": [
+        "What type of job are you looking for?",
+        "Where are you located?",
+        "What's your current job title?",
+        "I'd be happy to help you search for a job. What's your ideal job title?"
+      ]
+    },
+    {
+      "tags": "job_application",
+      "patterns": [
+        "I want to apply for a job",
+        "Can you help me submit my application",
+        "Job application",
+        "I'm interested in applying for a job"
+      ],
+      "responses": [
+        "What's the job title and company you're interested in?",
+        "Do you have a resume and cover letter ready?",
+        "I can guide you through the application process. What's the next step you need help with?",
+        "Let's get started on your job application. What's your current experience level?"
+      ]
+    },
+    {
+      "tags": "job_description",
+      "patterns": [
+        "What does this job entail",
+        "Can you tell me more about the job",
+        "Job description",
+        "What are the responsibilities of this job"
+      ],
+      "responses": [
+        "The job involves developing and maintaining software applications.",
+        "The responsibilities of this position include managing marketing campaigns and analyzing market trends.",
+        "The job requires a bachelor's degree in computer science or a related field.",
+        "The salary range for this position is $60,000 to $80,000 per year."
+      ]
+    },
+    {
+      "tags": "job_interview",
+      "patterns": [
+        "I have a job interview",
+        "Can you help me prepare for an interview",
+        "Job interview",
+        "I'm nervous about my interview"
+      ],
+      "responses": [
+        "What type of job are you interviewing for?",
+        "Here are some common interview questions: 'Tell me about yourself', 'What are your strengths and weaknesses?', 'Why do you want to work here?'",
+        "The company you're interviewing with values collaboration and teamwork.",
+        "I can help you prepare for your interview. What's your current level of experience?"
+      ]
+    },
+    {
+      "tags": "job_offer",
+      "patterns": [
+        "I received a job offer",
+        "Can you help me negotiate the salary",
+        "Job offer",
+        "I'm not sure about the job offer"
+      ],
+      "responses": [
+        "Congratulations on your job offer! What are the terms of the offer?",
+        "Do you want to negotiate the salary or benefits?",
+        "Here are some tips for negotiating a job offer: do your research, be confident, and be prepared to justify your request.",
+        "Let's evaluate the job offer together. What are your thoughts on the company culture?"
+      ]
+    }
+  ]
+}

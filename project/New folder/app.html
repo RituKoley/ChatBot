@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chatbot</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    .chat-container {
+        max-width: 500px;
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .chat-box {
+        height: 300px;
+        overflow-y: scroll;
+        padding: 10px;
+        background-color: #fff;
+    }
+    .chat-input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        border: none;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+    .send-button {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="chat-box" id="chat-box">
+        <div class="chat-message bot">Hello! How can I help you today?</div>
+    </div>
+    <input type="text" class="chat-input" id="user-input" placeholder="Type your message...">
+    <button class="send-button" onclick="sendMessage()">Send</button>
+</div>
+
+<script>
+    function sendMessage() {
+        var userInput = document.getElementById('user-input').value;
+        if (userInput.trim() !== '') {
+            var chatBox = document.getElementById('chat-box');
+            var userMessage = document.createElement('div');
+            userMessage.classList.add('chat-message');
+            userMessage.textContent = userInput;
+            chatBox.appendChild(userMessage);
+            document.getElementById('user-input').value = '';
+            // You can send the user input to your Python backend here (app.py) for processing
+            // For demonstration purpose, let's just reply with a simple message
+            setTimeout(function() {
+                var botReply = document.createElement('div');
+                botReply.classList.add('chat-message', 'bot');
+                botReply.textContent = 'I received your message: "' + userInput + '". How can I assist you further?';
+                chatBox.appendChild(botReply);
+                chatBox.scrollTop = chatBox.scrollHeight; // Auto scroll to bottom
+            }, 500);
+        }
+    }
+</script>
+
+</body>
+</html>
